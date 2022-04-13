@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap');
+
+:root {
+  --headings: 'Merriweather', serif;
+  --font-f-01: sans-serif, 'Raleway', Helvetica;
+  --font-f-02: 'Merriweather', serif;
+  --font-size: 16px;
+  --add-h-font-vw: 1vw;
+  --h-font-size: calc((var(--font-size)) + var(--add-h-font-vw));
+  --add-font-vw: 0.1vw;
+  --font-size-01: calc((var(--font-size)) + var(--add-font-vw));
+  --text-color-1: #fff;
+  --text-color-2: #D6D6D6;
+  --bg-color-1: #101010;
+  --bg-color-2: #7e5dac;
+  --color-3: #B86800;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-color-1);
+  background-color: "#111118";
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, div {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active {
+  color: #888888;
+  text-decoration: none;
+} 
+
+header {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+header svg {
+  width: calc(110px + 2vw);
+  height: auto;
+}
+
+header svg #shape {
+  transform-origin: center ;
+  animation: flyIn 0.8s cubic-bezier(.71,-0.01,.24,.96) 1 reverse;
+}
+
+@keyframes flyIn {
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.scrollElement {
+  position: absolute;
+  height: 6000px;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 6000px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+}
+
+#hero svg {
+  display: block;
+  position: fixed;
+  max-width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+}
+
+svg path {
+  transform-origin: bottom;
+}
+
+#hero h2,
+#hero h3 {
+  position: fixed;
+}
+
+#MountainsBack {
+  z-index: 4;
+}
+
+#MountainsMid {
+  z-index: 8;
+}
+
+#MountainsFront {
+  z-index: 12;
+}
+
+.left {
+  transform-origin: left;
+}
+.right {
+  transform-origin: right;
+}
+
+#hero #WDD {
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 10vh;
+  margin-top: -5vh;
+  margin-left: -35vw;
+  z-index: 5;
+  transform: translateY(-100px);
+}
+#hero #HCD {
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 10vh;
+  margin-top: -5vh;
+  margin-left: -35vw;
+  z-index: 5;
+}
+#hero #UID {
+  left: 0%;
+  padding: 2vw;
+  z-index: 6;
+}
+
+#hero #UXD {
+  right: 0%;
+  padding: 2vw;
+  z-index: 7;
+}
+
+#hero #FED {
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 10vh;
+  margin-top: -5vh;
+  margin-left: -35vw;
+  z-index: 9;
+  
+}
+
+.scroll-down {
+  position: fixed;
+  padding: 2rem 0;
+  width: 400px;
+  margin-left: -200px;
+  left: 50%;
+  bottom: 0;
+  z-index: 50;
+  font-family: var(--font-f-01);
+  text-align: center;
+  font-size: calc(var(--font-size) + 0.1vw);
+  animation: moveUpDown 0.6s ease alternate infinite;
+}
+
+@keyframes moveUpDown {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+/* -------------------------------------------------- T
+----------------------------------------------------- Y
+----------------------------------------------------- P
+----------------------------------------------------- E */
+
+body {
+  font-size: calc(var(--font-size) + 1vw);
+  color: var(--text-color-1);
+}
+
+#main-content {
+  --font-size: 16px;
+  font-family: var(--font-f-02);
+  font-size: calc(var(--font-size) + 0.5vw);
+}
+
+section {
+  font-family: var(--font-f-01);
+  font-weight: 300;
+}
+
+section h1, section h2 {
+  text-align: center;
+}
+
+section h1 {
+  --font-size: 28px;
+  text-transform: uppercase;
+  font-size: calc((var(--font-size)) + 0.8vw);
+  letter-spacing: calc(1px + 0.1vw);
+}
+
+section h2 {
+  --font-size: 20px;
+  font-size: calc((var(--font-size)) + 0.6vw);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+section h3 {
+  --font-size: 20px;
+  font-size: calc((var(--font-size)) + 0.5vw);
+}
+
+section h6 {
+  padding: 0.75rem 0;
+}
+
+/* ---------------------------------------- TYPE - Animation */
+
+#hero h2, #hero h3 {
+  font-family: var(--headings);
+  text-align: center;
+  font-size: var(--h-font-size);
+  font-weight: 300;
+}
+
+#hero #FED {
+  font-family: var(--font-f-01);
+  font-weight: 700;
+}
+
+#hero #HCD {
+  --h-font-size: calc((var(--font-size)));
+}
+
+#WDD, #HCD, #UID, #UXD, #FED {
+  white-space: nowrap;
+}
+
+#FED, #WDD, #HCD {
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------- TYPE - Portfolio */
+
+#about .syed-hassan-text h1 {
+  font-size: calc(24px + 3vw);
+  text-transform: uppercase;
+  letter-spacing: calc(1px + 0.1vw);
+  font-weight: 300;
+  text-align: right;
+  color: var(--text-color-1);
+}
+
+.link-p {
+  --font-size: 10px;
+  font-size: calc(var(--font-size) + 0.25vw);
+}
+
+#mgraphics {
+  text-align: center;
+}
+
+footer {
+  font-size: calc(8px + 0.5vw);
+}
+
+#skills h3 {
+  --font-size: 14px;
+  font-size: calc((var(--font-size)) + 0.8vw);
+}
+
+footer h1 {
+  --font-size: 18px;
+  font-size: calc((var(--font-size)) + 0.5vw);
+}
+
+footer p {
+  --font-size: 8px;
+  font-size: calc((var(--font-size)) + 0.3vw);
+}
+
+/* -------------------------------------------------- F
+----------------------------------------------------- L
+----------------------------------------------------- E
+----------------------------------------------------- X */
+
+.flex-container, .flex {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.grid-container, .flex-container {
+  padding: 0.5rem;
+}
+
+.column {
+  flex-direction: column;
+  column-gap: 1rem;
+}
+
+.center {
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.fr, .fr-fr, .fr-fr-fr {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.left-center {
+  align-items: center;
+}
+
+.flex {
+  line-height: 1;
+}
+
+/* -------------------------------------------------- P
+----------------------------------------------------- O
+----------------------------------------------------- R
+----------------------------------------------------- T
+----------------------------------------------------- F
+----------------------------------------------------- O
+----------------------------------------------------- L
+----------------------------------------------------- I
+----------------------------------------------------- O */
+
+section h1, h2 {
+  padding-bottom: 1rem;
+  color: var(--text-color-2);
+}
+
+section li, section p {
+  padding: 0.2rem 0;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.section-container {
+  width: 90vw;
+  margin: auto;
+}
+
+#main-content {
+  position: relative;
+  height: 800px;
+  z-index: 1;
+  padding: 50px 0;
+}
+
+main section:nth-child(1n) {
+  background-color: var(--bg-color-2);
+}
+main section:nth-child(2n) {
+  background-color: var(--bg-color-1);
+}
+
+/* -------------------------------------------------- About Section */
+
+.about-content {
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content div {
+  margin: 0.25rem;
+}
+
+.about-content .img-container img {
+  width: calc(65px + 10vw);
+  height: calc(65px + 10vw);
+  object-fit: cover;
+  border-radius: 50%;
+  border: whitesmoke 2px solid;
+}
+
+.syed-hassan-text {
+  flex-basis: 50%;
+}
+
+.about-content .img-container.flex-item {
+  flex-basis: 50%;
+}
+
+.line {
+  width: calc(0.5px + 0.1vw);
+  background-color: whitesmoke;
+  height: calc(150px + 5vw);
+}
+
+/* -------------------------------------------------- Highlights Section */
+
+#highlights .flex-container {
+  text-align: center;
+  row-gap: 1rem;
+}
+
+#highlights ul li {
+  line-height: 1.5;
+}
+
+/* -------------------------------------------------- Projects Section */
+
+#projects .grid-container .img-container img {
+  width: calc((16px * 18) + 10vw);
+  height: calc((9px * 18) + 10vw);
+  object-fit: contain;
+}
+
+/* -------------------------------------------------- Projects / Basic Section */
+#projects-basic .grid-container .img-container img {
+  width: calc((16px * 18) + 3vw);
+  height: calc((9px * 18) + 3vw);
+  object-fit: cover;
+}
+
+#projects-basic .grid-container {
+  gap: 2rem;
+}
+
+#projects-basic .grid-container .flex {
+  align-items: center;
+}
+
+#projects-basic .grid-container h4 {
+  padding: 1rem 0;
+}
+
+#projects-basic .grid-item .img-container {
+  border: gray solid 1px;
+  box-shadow: 2px 3px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------------------------------- UI Section */
+
+#projects-UI-UX .img-container img {
+  width: calc(200px + 2vw);
+}
+/* -------------------------------------------------- Motion Graphic Section */
+
+#mgraphics h4, #mgraphics p{
+  padding: 1rem 0;
+}
+
+.frame-container iframe {
+  width: calc(4vw * 16);
+  height: calc(4vw * 9);
+}
+
+/* -------------------------------------------------- Experience Section */
+#experience .other {
+  align-items: flex-start;
+}
+
+#experience .grid-container {
+  justify-items: stretch;
+  column-gap: 5rem;
+}
+
+#experience .grid-item, #credentials .grid-item {
+  border-bottom: #D6D6D6 1px solid;
+  padding-bottom: 0.5rem;
+}
+
+/* -------------------------------------------------- Credentials Section */
+#credentials .grid-container {
+  justify-items: stretch;
+  column-gap: 5rem;
+}
+
+.learning {
+  padding-bottom: 1rem;
+}
+
+/* -------------------------------------------------- Courses Section */
+#courses .courses-list {
+  list-style-type: square;
+  width: 80vw;
+  margin: auto;
+  padding-left: calc(1rem + 1vw);
+}
+
+/* -------------------------------------------------- Skills Section */
+
+#skills {
+  text-align: center;
+}
+
+#skills h3{
+  padding: 1rem 0;
+}
+
+#skills ul {
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+
+}
+
+#skills .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------------------------------------- Footer */
+footer{
+  border-top: var(--bg-color-2) solid 2px;
+  background-color: var(--bg-color-1);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#footer-logo {
+  width: 50px;
+}
+
+footer * {
+  padding: 0.5rem 0;
+}
+
+/* -------------------------------------------------- Media
+----------------------------------------------------- Queries */
+
+@media only screen and (min-width: 600px) {
+  .grid-container, .flex-container{
+    padding: 1rem;
+  }
+  #projects .grid-container .img-container img {
+    width: calc((16px * 18) + 15vw);
+    height: calc((9px * 18) + 15vw);
+  }
+  #projects-UI-UX .flex-container, #projects-UI-UX .flex {
+    flex-direction: row;
+  }
+  #projects-UI-UX .flex .img-container:nth-child(2) {
+    margin-top: 2vw;
+    margin-left: -4vw;
+  }
+  #projects-UI-UX .img-container img {
+    width: calc(150px + 2vw);
+  }
+} 
+
+@media only screen and (min-width: 768px) {
+  #hero h2,
+  #hero h3 {
+    font-size: calc((var(--h-font-size)) + (1.5vw));
+  }
+  #main-content {
+    font-size: calc((var(--font-size)) + (0.4vw));
+  }
+  .highlights-content .flex-container {
+    flex-direction: row;
+  }
+  .fr-fr, .fr-fr-fr {
+    grid-template-columns: 1fr 1fr;
+  }
+  .left-center {
+    align-items: center;
+  }
+  #highlights .flex-container {
+    text-align: left;
+    gap: 5rem;
+  }
+  #projects-UI-UX .img-container img {
+    width: calc(130px + 10vw);
+  }
+  #experience .grid-item, #credentials .grid-item {
+    border-bottom: none;
+  }
+  .frame-container iframe {
+    width: calc(3vw * 16);
+    height: calc(3vw * 9);
+  }
+  #courses .courses-list {
+    width: fit-content;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-container {
+    width: 80vw;
+  }
+  .grid-container, .flex-container {
+    padding: 2rem;
+  }
+  #projects .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fr-fr-fr {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
