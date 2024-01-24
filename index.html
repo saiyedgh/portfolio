@@ -1,97 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="logo-s.png">
-      <title>Syed's Portfolio</title>
-      <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo-s.png" />
+    <title>Syed's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-
-  <!-- ******************************* HEADER ******************************* -->
+    <!-- ******************************* HEADER ******************************* -->
     <header>
       <div class="logo-container">
         <a href="#hero">
-          <svg width="183" height="75" viewBox="0 0 183 75" version="1.1" id="LogoSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+          <svg
+            width="183"
+            height="75"
+            viewBox="0 0 183 75"
+            version="1.1"
+            id="LogoSVG"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            xml:space="preserve"
+          >
             <g id="logo-svg">
               <g id="Shape-S">
-                <path id="shape" d="m61.834 11.794-20 55.5-18.5-42 38.5-13.5Z" fill="#B86800"/>
-                <path id="s" d="M41.986 44.962c-1.104 0-2.096-.192-2.976-.576-.864-.4-1.544-.944-2.04-1.632-.496-.704-.752-1.512-.768-2.424h2.328c.08.784.4 1.448.96 1.992.576.528 1.408.792 2.496.792 1.04 0 1.856-.256 2.448-.768.608-.528.912-1.2.912-2.016 0-.64-.176-1.16-.528-1.56a3.373 3.373 0 0 0-1.32-.912c-.528-.208-1.24-.432-2.136-.672-1.104-.288-1.992-.576-2.664-.864a4.424 4.424 0 0 1-1.704-1.344c-.464-.624-.696-1.456-.696-2.496 0-.912.232-1.72.696-2.424.464-.704 1.112-1.248 1.944-1.632.848-.384 1.816-.576 2.904-.576 1.568 0 2.848.392 3.84 1.176 1.008.784 1.576 1.824 1.704 3.12h-2.4c-.08-.64-.416-1.2-1.008-1.68-.592-.496-1.376-.744-2.352-.744-.912 0-1.656.24-2.232.72-.576.464-.864 1.12-.864 1.968 0 .608.168 1.104.504 1.488.352.384.776.68 1.272.888.512.192 1.224.416 2.136.672 1.104.304 1.992.608 2.664.912.672.288 1.248.744 1.728 1.368.48.608.72 1.44.72 2.496 0 .816-.216 1.584-.648 2.304-.432.72-1.072 1.304-1.92 1.752-.848.448-1.848.672-3 .672Z" fill="#fff"/>
+                <path
+                  id="shape"
+                  d="m61.834 11.794-20 55.5-18.5-42 38.5-13.5Z"
+                  fill="#B86800"
+                />
+                <path
+                  id="s"
+                  d="M41.986 44.962c-1.104 0-2.096-.192-2.976-.576-.864-.4-1.544-.944-2.04-1.632-.496-.704-.752-1.512-.768-2.424h2.328c.08.784.4 1.448.96 1.992.576.528 1.408.792 2.496.792 1.04 0 1.856-.256 2.448-.768.608-.528.912-1.2.912-2.016 0-.64-.176-1.16-.528-1.56a3.373 3.373 0 0 0-1.32-.912c-.528-.208-1.24-.432-2.136-.672-1.104-.288-1.992-.576-2.664-.864a4.424 4.424 0 0 1-1.704-1.344c-.464-.624-.696-1.456-.696-2.496 0-.912.232-1.72.696-2.424.464-.704 1.112-1.248 1.944-1.632.848-.384 1.816-.576 2.904-.576 1.568 0 2.848.392 3.84 1.176 1.008.784 1.576 1.824 1.704 3.12h-2.4c-.08-.64-.416-1.2-1.008-1.68-.592-.496-1.376-.744-2.352-.744-.912 0-1.656.24-2.232.72-.576.464-.864 1.12-.864 1.968 0 .608.168 1.104.504 1.488.352.384.776.68 1.272.888.512.192 1.224.416 2.136.672 1.104.304 1.992.608 2.664.912.672.288 1.248.744 1.728 1.368.48.608.72 1.44.72 2.496 0 .816-.216 1.584-.648 2.304-.432.72-1.072 1.304-1.92 1.752-.848.448-1.848.672-3 .672Z"
+                  fill="#fff"
+                />
               </g>
-              <path id="ai-yed" d="M64.57 41.074h-7.296l-1.344 3.72h-2.304l6.048-16.632h2.52l6.024 16.632h-2.304l-1.344-3.72Zm-.624-1.776-3.024-8.448-3.024 8.448h6.048Zm13.892-11.232v16.728h-2.184V28.066h2.184Zm17.643 7.008v1.848h-9.576v-1.848h9.576Zm20.61-7.008-5.448 10.416v6.312h-2.184v-6.312l-5.472-10.416h2.424l4.128 8.472 4.128-8.472h2.424Zm9.288 1.776v5.592h6.096v1.8h-6.096v5.76h6.816v1.8h-9V28.042h9v1.8h-6.816Zm20.129-1.776c1.824 0 3.4.344 4.728 1.032 1.344.672 2.368 1.64 3.072 2.904.72 1.264 1.08 2.752 1.08 4.464 0 1.712-.36 3.2-1.08 4.464-.704 1.248-1.728 2.208-3.072 2.88-1.328.656-2.904.984-4.728.984H140.3V28.066h5.208Zm0 14.928c2.16 0 3.808-.568 4.944-1.704 1.136-1.152 1.704-2.76 1.704-4.824 0-2.08-.576-3.704-1.728-4.872-1.136-1.168-2.776-1.752-4.92-1.752h-3.024v13.152h3.024Z" fill="#fff"/>
+              <path
+                id="ai-yed"
+                d="M64.57 41.074h-7.296l-1.344 3.72h-2.304l6.048-16.632h2.52l6.024 16.632h-2.304l-1.344-3.72Zm-.624-1.776-3.024-8.448-3.024 8.448h6.048Zm13.892-11.232v16.728h-2.184V28.066h2.184Zm17.643 7.008v1.848h-9.576v-1.848h9.576Zm20.61-7.008-5.448 10.416v6.312h-2.184v-6.312l-5.472-10.416h2.424l4.128 8.472 4.128-8.472h2.424Zm9.288 1.776v5.592h6.096v1.8h-6.096v5.76h6.816v1.8h-9V28.042h9v1.8h-6.816Zm20.129-1.776c1.824 0 3.4.344 4.728 1.032 1.344.672 2.368 1.64 3.072 2.904.72 1.264 1.08 2.752 1.08 4.464 0 1.712-.36 3.2-1.08 4.464-.704 1.248-1.728 2.208-3.072 2.88-1.328.656-2.904.984-4.728.984H140.3V28.066h5.208Zm0 14.928c2.16 0 3.808-.568 4.944-1.704 1.136-1.152 1.704-2.76 1.704-4.824 0-2.08-.576-3.704-1.728-4.872-1.136-1.168-2.776-1.752-4.92-1.752h-3.024v13.152h3.024Z"
+                fill="#fff"
+              />
             </g>
           </svg>
         </a>
       </div>
       <nav>
-         <ul class="flex">
-           <li><a href="#main-content">Portfolio</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#experience">Experience</a></li>
-           <li><a href="#credentials">Credentials</a></li>
-           <!-- <li><a href="#skills">Skills</a></li> -->
-         </ul>
+        <ul class="flex">
+          <li><a href="#main-content">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <!-- <li><a href="#skills">Skills</a></li> -->
+        </ul>
       </nav>
     </header>
 
-  <!-- ******************************* HERO (Animation) ******************************* -->
+    <!-- ******************************* HERO (Animation) ******************************* -->
     <div id="hero">
-
       <canvas id="canvas"></canvas>
 
-      <svg width="3840" height="2160" viewBox="0 0 3840 2160" version="1.1" id="MountainsBack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+      <svg
+        width="3840"
+        height="2160"
+        viewBox="0 0 3840 2160"
+        version="1.1"
+        id="MountainsBack"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        xml:space="preserve"
+      >
         <g id="mount-back">
-          <path id="mount-b-01" d="M163.528 1850.04C20.273 1962.7 149.558 1909.74-44 2160h3928.55c-8.38-43-36.96-151.7-84.2-242.52-59.05-113.52-298.54-100.14-333.53-182.7-28-66.05-927.21-238.51-999.75-316.48-48.12-70.23-297.67-161.54-388.65-170.48-113.73-11.18-458.33-250.377-587.37-320.896-129.04-70.52-128.84-40.582-238.2 41.118-109.35 81.698-78.73 171.998-203.4 250.258-124.662 78.26-179.339-7.74-302.91 132.44-123.571 140.18-53.356 146.34-113.501 275.34-60.145 129-326.256 111.3-469.511 223.96Z" fill="#1F6369"/>
-          <path id="mount-b-03" d="M1716.18 1825.65c-120.02 93.59-70.42 126.45-232.58 334.35h1966.8c-7.02-35.72-32.32-212.58-71.9-288.02-49.47-94.3-119.12-120.37-148.43-188.96-23.46-54.87-153.77-195.77-214.54-260.55-40.31-58.34-102.37-260.61-178.59-268.04-95.28-9.29-68.1-110.36-176.21-168.946-108.1-58.583-75.12-67.871-166.74 0-91.61 67.866-94.18 168.026-198.62 233.046-104.44 65.01-28.68 101.64-132.2 218.09-103.53 116.45-169.95 55.99-220.34 163.16-50.39 107.16-106.63 132.28-226.65 225.87Z" fill="#358E89"/>
-          <path id="mount-b-02" d="M3738.09 1452.79c38.53 108.05 78.82 137.21 124.25 194.99V2160H2279.21s234.42-203.87 272.9-282.87c47.39-57.76 159.7-179.07 183.46-229.35C2867.83 1368 2892.07 1333 3006.16 1405c67.08 42.33 216.07-151.25 243.74-202.33 121.75-224.67 146.99-114.67 190.83-30.64 12.54 24.04 14.44 57.51 57.24 86.08 37.69 25.17 191.96 59.62 240.12 194.68Z" fill="#2C554E"/>
-          <path id="mount-b-04" d="M113.967 1571.3C74.064 1661.24 18.599 1712-14.72 1753.61V2160h1639.67s-242.79-169.71-282.64-235.47c-49.09-48.08-155.82-153.58-190.02-190.92-34.2-37.33-281.389-278.99-331.268-280.27-82.34-2.12-80.431 116.22-159.604-90.25-98.966-258.1-229.969-46.72-239.47-25.51-9.501 21.22-14.95 47.87-59.283 71.66-39.04 20.95-198.819 49.63-248.698 162.06Z" fill="#55977F"/>
+          <path
+            id="mount-b-01"
+            d="M163.528 1850.04C20.273 1962.7 149.558 1909.74-44 2160h3928.55c-8.38-43-36.96-151.7-84.2-242.52-59.05-113.52-298.54-100.14-333.53-182.7-28-66.05-927.21-238.51-999.75-316.48-48.12-70.23-297.67-161.54-388.65-170.48-113.73-11.18-458.33-250.377-587.37-320.896-129.04-70.52-128.84-40.582-238.2 41.118-109.35 81.698-78.73 171.998-203.4 250.258-124.662 78.26-179.339-7.74-302.91 132.44-123.571 140.18-53.356 146.34-113.501 275.34-60.145 129-326.256 111.3-469.511 223.96Z"
+            fill="#1F6369"
+          />
+          <path
+            id="mount-b-03"
+            d="M1716.18 1825.65c-120.02 93.59-70.42 126.45-232.58 334.35h1966.8c-7.02-35.72-32.32-212.58-71.9-288.02-49.47-94.3-119.12-120.37-148.43-188.96-23.46-54.87-153.77-195.77-214.54-260.55-40.31-58.34-102.37-260.61-178.59-268.04-95.28-9.29-68.1-110.36-176.21-168.946-108.1-58.583-75.12-67.871-166.74 0-91.61 67.866-94.18 168.026-198.62 233.046-104.44 65.01-28.68 101.64-132.2 218.09-103.53 116.45-169.95 55.99-220.34 163.16-50.39 107.16-106.63 132.28-226.65 225.87Z"
+            fill="#358E89"
+          />
+          <path
+            id="mount-b-02"
+            d="M3738.09 1452.79c38.53 108.05 78.82 137.21 124.25 194.99V2160H2279.21s234.42-203.87 272.9-282.87c47.39-57.76 159.7-179.07 183.46-229.35C2867.83 1368 2892.07 1333 3006.16 1405c67.08 42.33 216.07-151.25 243.74-202.33 121.75-224.67 146.99-114.67 190.83-30.64 12.54 24.04 14.44 57.51 57.24 86.08 37.69 25.17 191.96 59.62 240.12 194.68Z"
+            fill="#2C554E"
+          />
+          <path
+            id="mount-b-04"
+            d="M113.967 1571.3C74.064 1661.24 18.599 1712-14.72 1753.61V2160h1639.67s-242.79-169.71-282.64-235.47c-49.09-48.08-155.82-153.58-190.02-190.92-34.2-37.33-281.389-278.99-331.268-280.27-82.34-2.12-80.431 116.22-159.604-90.25-98.966-258.1-229.969-46.72-239.47-25.51-9.501 21.22-14.95 47.87-59.283 71.66-39.04 20.95-198.819 49.63-248.698 162.06Z"
+            fill="#55977F"
+          />
         </g>
       </svg>
 
-        <h2 id="WDD">Web Design & Development</h2>
-        <h3 id="HCD">Human Cenetered Design</h3>
+      <h2 id="WDD">Web Design & Development</h2>
+      <h3 id="HCD">Human Cenetered Design</h3>
 
-        <h3 id="UID">User Interface Design</h3>
-        <h3 id="UXD">User Experience Design</h3>
+      <h3 id="UID">User Interface Design</h3>
+      <h3 id="UXD">User Experience Design</h3>
 
-        <svg width="3840" height="2160" viewBox="0 0 3840 2160" version="1.1" id="MountainsMid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
-          <g id="mount-mid">
-            <path class="right" id="mount-m-01" d="M3460.22 1183.51c128.22-116.67 306.61-121.16 379.78-108.82V2160H854c49.167-44.17 164.92-143.62 234.61-188.04 87.1-55.53 372.81-145.85 454.11-197.67 81.3-51.82 103.37-61.45 170.73-108.83 67.36-47.38 177.69-42.93 258.99-31.83 81.3 11.11 211.38 12.59 372.82 0 161.43-12.59 211.38-77.73 238.09-100.68 26.71-22.95 84.78-96.99 171.89-137.7 87.1-40.72 198.6 83.65 252.02 90.32 53.43 6.66 292.68-156.21 452.96-302.06Z" fill="#3182AF"/>
-            <path class="left" id="mount-m-02" d="M480.979 1179.57C463.121 1151.14 222.631 1000.37 0 984v1176h2568c-16.67-14.93-58.81-50.14-94.05-71.51-44.05-26.71-132.15-132.67-213.11-214.52-23.03-23.29-88.1-63.75-186.91-93.05-66.56-19.73-252.4 65.48-321.45 46.53-69.05-18.96-265.49-33.6-320.26-80.99-54.76-47.38-95.24-56-171.44-136.98-76.19-80.99-357.158-168.86-426.21-240.37-69.051-71.51-335.733-161.11-353.591-189.54Z" fill="#4797C3"/>
-          </g>
-        </svg>
+      <svg
+        width="3840"
+        height="2160"
+        viewBox="0 0 3840 2160"
+        version="1.1"
+        id="MountainsMid"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        xml:space="preserve"
+      >
+        <g id="mount-mid">
+          <path
+            class="right"
+            id="mount-m-01"
+            d="M3460.22 1183.51c128.22-116.67 306.61-121.16 379.78-108.82V2160H854c49.167-44.17 164.92-143.62 234.61-188.04 87.1-55.53 372.81-145.85 454.11-197.67 81.3-51.82 103.37-61.45 170.73-108.83 67.36-47.38 177.69-42.93 258.99-31.83 81.3 11.11 211.38 12.59 372.82 0 161.43-12.59 211.38-77.73 238.09-100.68 26.71-22.95 84.78-96.99 171.89-137.7 87.1-40.72 198.6 83.65 252.02 90.32 53.43 6.66 292.68-156.21 452.96-302.06Z"
+            fill="#3182AF"
+          />
+          <path
+            class="left"
+            id="mount-m-02"
+            d="M480.979 1179.57C463.121 1151.14 222.631 1000.37 0 984v1176h2568c-16.67-14.93-58.81-50.14-94.05-71.51-44.05-26.71-132.15-132.67-213.11-214.52-23.03-23.29-88.1-63.75-186.91-93.05-66.56-19.73-252.4 65.48-321.45 46.53-69.05-18.96-265.49-33.6-320.26-80.99-54.76-47.38-95.24-56-171.44-136.98-76.19-80.99-357.158-168.86-426.21-240.37-69.051-71.51-335.733-161.11-353.591-189.54Z"
+            fill="#4797C3"
+          />
+        </g>
+      </svg>
 
-        <h2 id="FED">Front-End Development</h2>
-        
-        <svg width="3840" height="2160" viewBox="0 0 3840 2160" version="1.1" id="MountainsFront" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
-          <g id="mount-front">
-            <path class="left" id="mount-f-01" d="M0 2160h3192c0-9.29-13.45-33.88-67.27-57.96-67.27-30.1-216.99-41.24-313.56-34.55-96.56 6.68-307.05-51.28-380.82-79.14-73.78-27.87-334.18-250.8-433.99-236.31-99.82 14.49-250.63-69.1-417.72-196.17-167.09-127.07-393.85-67.99-498-99.2-104.161-31.21-230.019-31.21-286.437-37.9-56.419-6.69-404.697-158.28-501.259-236.3-77.251-62.42-226.037-26.01-292.944 0V2160Z" fill="#2F5278"/>
-            <path class="right" id="mount-f-02" d="M3585.3 1438.02c55.05 108.68 208.61 183.13 280.7 206.77V2160H1604s334.95-205.06 389.92-284.52c67.72-58.1 214.95-185.58 262.14-230.69 47.18-45.11 287.25-138.57 356.06-140.12 113.6-2.57 297.09-99.12 391.02-246.08 188.45-294.836 293.81-38.44 306.92-12.81 13.1 25.63 88.47 94.84 144.17 61.52 55.7-33.33 62.26-5.13 131.07 130.72Z" fill="#334961"/>
-            <path class="right" id="mount-f-03" d="M3840 2160H1362c0-45.14 40.58-156.26 64.94-177.1 24.35-20.84 96.24-70.61 192.48-126.17 96.25-55.56 267.86-105.33 425.57-192.15 157.7-86.81 191.33-30.09 424.4-75.24 233.07-45.14 389.61-30.09 505.57-50.93 115.96-20.83 237.71-64.82 288.73-70.6 51.03-5.79 177.42-64.83 303.81-156.27 101.12-73.15 223.8-74.47 272.5-65.98V2160Z" fill="#416A95"/>
-            <path class="left" id="mount-f-04" d="M434.39 1542.42C404.738 1517.66 132.442 1383.82 0 1320v840h2040l-366.19-236.81-189.77-102.93c-25.2-16.56-120.68-30.67-164.56-46.79-54.86-20.15-149.74-46.07-226.83-65.5-77.1-19.44-99.336-44.63-189.772-70.54-90.436-25.91-263.895-13.68-299.477-18-35.581-4.31-131.948-46.06-169.011-77.01Z" fill="#4672A0"/>
-          </g>
-        </svg>
+      <h2 id="FED">Front-End Development</h2>
 
-        <h4 class="scroll-down">Scroll down to see the Portfolio</h4>
+      <svg
+        width="3840"
+        height="2160"
+        viewBox="0 0 3840 2160"
+        version="1.1"
+        id="MountainsFront"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        xml:space="preserve"
+      >
+        <g id="mount-front">
+          <path
+            class="left"
+            id="mount-f-01"
+            d="M0 2160h3192c0-9.29-13.45-33.88-67.27-57.96-67.27-30.1-216.99-41.24-313.56-34.55-96.56 6.68-307.05-51.28-380.82-79.14-73.78-27.87-334.18-250.8-433.99-236.31-99.82 14.49-250.63-69.1-417.72-196.17-167.09-127.07-393.85-67.99-498-99.2-104.161-31.21-230.019-31.21-286.437-37.9-56.419-6.69-404.697-158.28-501.259-236.3-77.251-62.42-226.037-26.01-292.944 0V2160Z"
+            fill="#2F5278"
+          />
+          <path
+            class="right"
+            id="mount-f-02"
+            d="M3585.3 1438.02c55.05 108.68 208.61 183.13 280.7 206.77V2160H1604s334.95-205.06 389.92-284.52c67.72-58.1 214.95-185.58 262.14-230.69 47.18-45.11 287.25-138.57 356.06-140.12 113.6-2.57 297.09-99.12 391.02-246.08 188.45-294.836 293.81-38.44 306.92-12.81 13.1 25.63 88.47 94.84 144.17 61.52 55.7-33.33 62.26-5.13 131.07 130.72Z"
+            fill="#334961"
+          />
+          <path
+            class="right"
+            id="mount-f-03"
+            d="M3840 2160H1362c0-45.14 40.58-156.26 64.94-177.1 24.35-20.84 96.24-70.61 192.48-126.17 96.25-55.56 267.86-105.33 425.57-192.15 157.7-86.81 191.33-30.09 424.4-75.24 233.07-45.14 389.61-30.09 505.57-50.93 115.96-20.83 237.71-64.82 288.73-70.6 51.03-5.79 177.42-64.83 303.81-156.27 101.12-73.15 223.8-74.47 272.5-65.98V2160Z"
+            fill="#416A95"
+          />
+          <path
+            class="left"
+            id="mount-f-04"
+            d="M434.39 1542.42C404.738 1517.66 132.442 1383.82 0 1320v840h2040l-366.19-236.81-189.77-102.93c-25.2-16.56-120.68-30.67-164.56-46.79-54.86-20.15-149.74-46.07-226.83-65.5-77.1-19.44-99.336-44.63-189.772-70.54-90.436-25.91-263.895-13.68-299.477-18-35.581-4.31-131.948-46.06-169.011-77.01Z"
+            fill="#4672A0"
+          />
+        </g>
+      </svg>
 
+      <h4 class="scroll-down">Scroll down to see the Portfolio</h4>
     </div>
 
     <div class="scrollElement"></div>
 
-
-  <!-- ******************************* MAIN ******************************* -->
-  <!-- ******************************* CONTENT ******************************* -->
+    <!-- ******************************* MAIN ******************************* -->
+    <!-- ******************************* CONTENT ******************************* -->
 
     <main id="main-content">
       <!-- ******************************* About ******************************* -->
       <section id="about">
-
         <div class="section-container">
-
           <div class="about-content flex-container">
             <div class="syed-hassan-text flex-item">
               <h1>Syed</h1>
@@ -101,107 +196,112 @@
             <div class="line flex-item"></div>
 
             <div class="img-container flex-item">
-              <img id="syed_pic" src="assets/syed-01.jpg" alt="Syed's picture">
+              <img
+                id="syed_pic"
+                src="assets/syed-01.jpg"
+                alt="Syed's picture"
+              />
             </div>
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Highlights ******************************* -->
       <section id="highlights">
-
         <div class="section-container">
-
           <div class="highlights-content">
-            
             <h1>Highlights</h1>
 
             <div class="flex-container column left-center">
               <div class="flex-item">
                 <h3>Approach</h3>
-                  <ul>
-                    <li>Design Thinking</li>
-                    <li>User Research</li>
-                    <li>User Centered Approach</li>
-                    <li>Responsive Web Design</li>
-                    <li>Flex & Grid Layouts</li>
-                    <li>Version control using Git and GitHub</li>
-                    <li>Sketching, Wireframing and Prototyping</li>
-                    <li>Usability Testing and Design Critique</li>
-                    <li>Visual Storytelling</li>
-                    <li>Agile Workflow</li>
-                    <li>Critical Thinking</li>
-                    <li>Problem Solving</li>
-                    <li>Animation and Motion Graphics</li>
-                    <li>Care for Accessibility</li>
-                  </ul>
+                <ul>
+                  <li>Agile Workflow</li>
+                  <li>Design Thinking</li>
+                  <li>Responsive Web Design</li>
+                  <li>Version control using Git and GitHub</li>
+                  <li>Human Centered Approach</li>
+                  <li>User Research</li>
+                  <li>Sketching, Wireframing and Prototyping</li>
+                  <li>Usability Testing and Design Critique</li>
+                  <li>Animation and Motion Graphics</li>
+                  <li>Visual Storytelling</li>
+                  <li>Critical Thinking, Problem Solving</li>
+                </ul>
               </div>
               <div class="flex-item">
                 <h3>Skillset</h3>
-                  <ul>
-                    <li>JavaScript ES6</li>
-                    <li>CSS & SCSS</li>
-                    <li>HTML & XML</li>
-                    <li>PHP</li>
-                    <li>SQL and NoSQL</li>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>C++</li>
-                    <li>Microsoft Office</li>
-                    <li>SAP</li>
-                    <li>Adobe Creative Suite</li>
-                    <li>Figma</li>
-                  </ul>
+                <ul>
+                  <li>JavaScript ES6</li>
+                  <li>Python</li>
+                  <li>PHP</li>
+                  <li>SQL</li>
+                  <li>CSS & SASS</li>
+                  <li>R</li>
+                  <li>C++</li>
+                  <li>Figma</li>
+                  <li>Adobe Creative Suite</li>
+                  <li>Microsoft Office</li>
+                  <li>SAP</li>
+                </ul>
               </div>
               <div class="flex-item">
                 <h3>Libraries+</h3>
-                  <ul>
-                    <li>React JS</li>
-                    <li>jQuery, Bootstrap, Tailwind</li>
-                    <li>CSS Animations</li>
-                    <li>HTML Canvas</li>
-                    <li>GreenSock JS</li>
-                    <li>Tidyverse</li>
-                    <li>Node JS (novice)</li>
-                    <li>Express JS (novice)</li>
-                    <li>MongoDB (novice)</li>
-                    <li>AWS EC2 (novice)</li>
-                  </ul>
+                <ul>
+                  <li>React.js</li>
+                  <li>Eleventy/11ty (Jamstack)</li>
+                  <li>Next.js (Jamstack)</li>
+                  <li>Node.js</li>
+                  <li>Sanity, WordPress</li>
+                  <li>jQuery, Bootstrap, Tailwind</li>
+                  <li>CSS Animations, GreenSock.js</li>
+                  <li>HTML Canvas</li>
+                  <li>Express.js</li>
+                  <li>NoSQL, MongoDB (novice)</li>
+                  <li>AWS EC2 (novice)</li>
+                </ul>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Projects  ******************************* -->
       <section id="projects">
-
         <div class="section-container">
-
           <div class="projects-content">
-
             <h1>Projects</h1>
             <h2>Web Design & Development</h2>
 
             <div class="grid-container">
-
               <div class="grid-item projects-flexbox flex left-center column">
                 <div class="projects-box">
                   <a class="img-link" href="/cms">
                     <div class="img-container">
-                      <img src="assets/advanced/cms.png" alt="Content Management System page">
+                      <img
+                        src="assets/advanced/cms.png"
+                        alt="Content Management System page"
+                      />
                     </div>
                   </a>
                 </div>
                 <div class="project-description">
-                  <h4> Full-Stack CMS with Spotify's API</h4>
-                  <p>EventsGo is a Content Management System that enables you to create event posts using images and YouTube videos. You can also create user accounts for the in-house CMS. Users can also search for artists on our page and add them to the website. The rationale was to test my full-stack skills, integrate the frontend with the database, and enhance its capacity to import and export data through APIs. The software is also customizable and can be used as a content managing tool using the web browser. </p>
-                  <p>Please use the email <span>"testuser@email.com"</span> and password <span>"portfolio2023"</span>. </p>
+                  <h4>Full-Stack CMS with Spotify's API</h4>
+                  <p>
+                    EventsGo is a Content Management System that enables you to
+                    create event posts using images and YouTube videos. You can
+                    also create user accounts for the in-house CMS. Users can
+                    also search for artists on our page and add them to the
+                    website. The rationale was to test my full-stack skills,
+                    integrate the frontend with the database, and enhance its
+                    capacity to import and export data through APIs. The
+                    software is also customizable and can be used as a content
+                    managing tool using the web browser.
+                  </p>
+                  <p>
+                    Please use the email <span>"testuser@email.com"</span> and
+                    password <span>"portfolio2023"</span>.
+                  </p>
                   <h5>Tech Stack</h5>
                   <ul>
                     <li>HTML, CSS & JS</li>
@@ -209,7 +309,7 @@
                     <li>Spotify's API with OAuth</li>
                   </ul>
                   <div class="button-container">
-                    <a class="button-container" href="/cms">Project Link</a> 
+                    <a class="button-container" href="/cms">Project Link</a>
                   </div>
                 </div>
               </div>
@@ -218,20 +318,34 @@
                 <div class="projects-box">
                   <a class="img-link" href="https://clubcricketofchicago.com">
                     <div class="img-container">
-                      <img src="assets/advanced/cricket.png" alt="Club cricket of Chicago website">
+                      <img
+                        src="assets/advanced/cricket.png"
+                        alt="Club cricket of Chicago website"
+                      />
                     </div>
                   </a>
                 </div>
                 <div class="project-description">
                   <h4>Club Cricket Website</h4>
-                  <p>Club Cricket of Chicago hired me to create their website. The website mimics sports teams' websites by incorporating animations and interactions. The project is a work in progress but the layout is well in place. The site is created using React JS with code that is scaleable, and can easily accept more content.</p>
+                  <p>
+                    Club Cricket of Chicago hired me to create their website.
+                    The website mimics sports teams' websites by incorporating
+                    animations and interactions. The project is a work in
+                    progress but the layout is well in place. The site is
+                    created using React JS with code that is scaleable, and can
+                    easily accept more content.
+                  </p>
                   <h5>Tech Stack</h5>
                   <ul>
                     <li>HTML, CSS</li>
                     <li>React JS</li>
                   </ul>
                   <div class="button-container">
-                    <a class="button-container" href="https://clubcricketofchicago.com">Project Link</a> 
+                    <a
+                      class="button-container"
+                      href="https://clubcricketofchicago.com"
+                      >Project Link</a
+                    >
                   </div>
                 </div>
               </div>
@@ -252,17 +366,33 @@
 
               <div class="grid-item projects-flexbox flex left-center column">
                 <div class="projects-box">
-                  <a class="img-link" href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70">
+                  <a
+                    class="img-link"
+                    href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70"
+                  >
                     <div class="img-container">
-                      <img src="assets/advanced/animation.png" alt="GreenSock Animation made for Syed's Portfolio">
+                      <img
+                        src="assets/advanced/animation.png"
+                        alt="GreenSock Animation made for Syed's Portfolio"
+                      />
                     </div>
                   </a>
                 </div>
                 <div class="project-description">
                   <h4>GSAP Portfolio Animation</h4>
-                  <p>The portfolio animation was a personal project. Used GreenSock JS, an animation library that uses JavaScript and Event Listeners to create pixel-perfect animations. The motive was to create attractive energy for the website users. I have written about the process in detail on Medium. </p>
+                  <p>
+                    The portfolio animation was a personal project. Used
+                    GreenSock JS, an animation library that uses JavaScript and
+                    Event Listeners to create pixel-perfect animations. The
+                    motive was to create attractive energy for the website
+                    users. I have written about the process in detail on Medium.
+                  </p>
                   <div class="button-container">
-                    <a class="button-container" href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70">Article Link</a> 
+                    <a
+                      class="button-container"
+                      href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70"
+                      >Article Link</a
+                    >
                   </div>
                 </div>
               </div>
@@ -276,12 +406,8 @@
                 <h4>Blog Site</h4>
               </div> -->
             </div>
-            
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Projects / Basic ******************************* -->
@@ -389,17 +515,13 @@
 
       <!-- ******************************* Projects / UID & UXD ******************************* -->
       <section id="projects-UI-UX">
-
         <div class="section-container">
-
           <div class="projects-UI-UX-content">
-
             <h1>Projects</h1>
             <h2>User Interface &</h2>
             <h2>User Experience Design</h2>
 
             <div class="flex-container column center">
-
               <div class="cakery-text flex-item">
                 <h3>Native Mobile App - <em>Cakery</em></h3>
                 <ul>
@@ -413,24 +535,29 @@
                 </ul>
               </div>
               <div class="flex-item">
-                <a class="img-link" href="https://xd.adobe.com/view/5a82027e-76dc-4bc8-a17a-6df7ec8749c6-0fd1/">
+                <a
+                  class="img-link"
+                  href="https://xd.adobe.com/view/5a82027e-76dc-4bc8-a17a-6df7ec8749c6-0fd1/"
+                >
                   <div class="flex column">
                     <div class="img-container">
-                      <img src="assets/ui/mockup-01.png" alt="Cakery app mockup image">
+                      <img
+                        src="assets/ui/mockup-01.png"
+                        alt="Cakery app mockup image"
+                      />
                     </div>
                     <div class="img-container">
-                      <img src="assets/ui/mockup-02.png" alt="Cakery app mockup image">
+                      <img
+                        src="assets/ui/mockup-02.png"
+                        alt="Cakery app mockup image"
+                      />
                     </div>
                   </div>
                 </a>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Projects / Motion Graphics ******************************* -->
@@ -496,16 +623,12 @@
 
       <!-- ******************************* Experience ******************************* -->
       <section id="experience">
-
         <div class="section-container">
-
           <div class="experience-content">
-
             <h1>Experience</h1>
             <h2>Current Experience</h2>
 
             <div class="fit flex column">
-
               <div class="exp-item">
                 <h3>Freelance Designer & Developer</h3>
                 <h5>since Sep 20'</h5>
@@ -532,26 +655,18 @@
                   <li>Accounting, Finance, & Administration</li>
                 </ul>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Credentials ******************************* -->
       <section id="credentials">
-
         <div class="section-container">
-
           <div class="credentials-content">
-
             <h1>Credentials</h1>
-            
-            <div class="fit flex column">
 
+            <div class="fit flex column">
               <div class="flex column other edu-item">
                 <h3>Bachelor of Information</h3>
                 <h6>University of Toronto - 2024</h6>
@@ -610,15 +725,13 @@
                   </div>
                 </div>
               </div>
-
             </div>
 
-                      <!-- ******************************* Certification Courses ******************************* -->
+            <!-- ******************************* Certification Courses ******************************* -->
             <div id="courses">
-
               <h2>Courses</h2>
 
-              <ul class="courses-list"> 
+              <ul class="courses-list">
                 <li>Learn React</li>
                 <li>React.js Essential Training</li>
                 <li>React.js Building an Interface</li>
@@ -638,32 +751,38 @@
                 <li>Adobe Creative Suite</li>
                 <li>and many others….</li>
               </ul>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Skills & Toolkit ******************************* -->
       <section id="skills">
-
         <div class="section-container">
-
           <div class="skills-content">
-
             <h1>Skills & Toolkit</h1>
 
             <div class="flex-container column">
               <div class="flex-item">
                 <a class="img-link">
                   <div class="img-container">
-                    <img src="assets/skills/programming.jpg" alt="a computer with written code on screen">
+                    <img
+                      src="assets/skills/programming.jpg"
+                      alt="a computer with written code on screen"
+                    />
                   </div>
                 </a>
-                <p class="link-p">Photo by <a href="https://unsplash.com/@blakeconnally?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Blake Connally</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                <p class="link-p">
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@blakeconnally?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Blake Connally</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Unsplash</a
+                  >
                 </p>
               </div>
               <h3>Programming Languages</h3>
@@ -683,11 +802,23 @@
               <div class="flex-item">
                 <a class="img-link">
                   <div class="img-container">
-                    <img src="assets/skills/frameworks.jpg" alt="a wooden cube">
+                    <img
+                      src="assets/skills/frameworks.jpg"
+                      alt="a wooden cube"
+                    />
                   </div>
                 </a>
                 <p class="link-p">
-                  Photo by <a href="https://unsplash.com/@kieran_wood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kieran Wood</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@kieran_wood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Kieran Wood</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Unsplash</a
+                  >
                 </p>
               </div>
               <h3>Frameworks & Libraries</h3>
@@ -706,11 +837,23 @@
               <div class="flex-item">
                 <a class="img-link">
                   <div class="img-container">
-                    <img src="assets/skills/adobe.jpg" alt="Adobe's softare icons">
+                    <img
+                      src="assets/skills/adobe.jpg"
+                      alt="Adobe's softare icons"
+                    />
                   </div>
                 </a>
                 <p class="link-p">
-                  Photo by <a href="https://unsplash.com/@emilybernal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emily Bernal</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@emilybernal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Emily Bernal</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Unsplash</a
+                  >
                 </p>
               </div>
               <h3>Adobe Creative Suite</h3>
@@ -728,11 +871,23 @@
               <div class="flex-item">
                 <a class="img-link">
                   <div class="img-container">
-                    <img src="assets/skills/design.jpg" alt="paper prototype designs">
+                    <img
+                      src="assets/skills/design.jpg"
+                      alt="paper prototype designs"
+                    />
                   </div>
                 </a>
                 <p class="link-p">
-                  Photo by <a href="https://unsplash.com/@halacious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hal Gatewood</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@halacious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Hal Gatewood</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Unsplash</a
+                  >
                 </p>
               </div>
               <h3>Design+</h3>
@@ -747,11 +902,23 @@
               <div class="flex-item">
                 <a class="img-link">
                   <div class="img-container">
-                    <img src="assets/skills/toolkit.jpg" alt="different tools scattered on a black table">
+                    <img
+                      src="assets/skills/toolkit.jpg"
+                      alt="different tools scattered on a black table"
+                    />
                   </div>
                 </a>
                 <p class="link-p">
-                  Photo by <a href="https://unsplash.com/@dancristianp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan-Cristian Pădureț</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@dancristianp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Dan-Cristian Pădureț</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    >Unsplash</a
+                  >
                 </p>
               </div>
               <h3>Toolkit+</h3>
@@ -768,31 +935,30 @@
                 <li>Microsoft Excel and Office Suite</li>
               </ul>
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- ******************************* Footer ******************************* -->
       <footer>
         <div class="img-container">
           <a href="#">
-            <img id="footer-logo" src="assets/logo-s.png" alt="Syed's website logo">
+            <img
+              id="footer-logo"
+              src="assets/logo-s.png"
+              alt="Syed's website logo"
+            />
           </a>
         </div>
         <h1>SAI-YED</h1>
         <p></p>
         <p>sai-yed@outlook.com</p>
       </footer>
-
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="js/canvas.js"></script>
     <script src="js/script.js"></script>
-
   </body>
 </html>
