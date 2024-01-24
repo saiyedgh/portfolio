@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap');
 
 :root {
@@ -58,16 +58,25 @@ header {
   width: 100vw;
   z-index: 100;
   padding: 10px 0;
+  background-color:rgba(255, 255, 255, 0.5);
 }
 
 header svg {
-  width: calc(110px + 2vw);
+  width: calc(110px + 1.5vw);
   height: auto;
 }
 
 header svg #shape {
   transform-origin: center ;
   animation: flyIn 0.8s cubic-bezier(.71,-0.01,.24,.96) 1 reverse;
+}
+
+nav a:link, nav a:visited, nav a:focus, nav a:hover, nav a:active {
+  color: #FFF;
+}
+
+nav ul.flex {
+  justify-content: space-around;
 }
 
 @keyframes flyIn {
@@ -212,8 +221,15 @@ body {
   color: var(--text-color-1);
 }
 
+nav {
+  font-family: var(--font-f-01);
+  font-size: calc(10px + 0.3vw);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 #main-content {
-  --font-size: 16px;
+  --font-size: 14px;
   font-family: var(--font-f-02);
   font-size: calc(var(--font-size) + 0.5vw);
 }
@@ -242,7 +258,7 @@ section h2 {
 }
 
 section h3 {
-  --font-size: 20px;
+  --font-size: 18px;
   font-size: calc((var(--font-size)) + 0.5vw);
 }
 
@@ -279,12 +295,40 @@ section h6 {
 /* ---------------------------------------- TYPE - Portfolio */
 
 #about .syed-hassan-text h1 {
-  font-size: calc(24px + 3vw);
+  font-size: calc(22px + 3vw);
   text-transform: uppercase;
   letter-spacing: calc(1px + 0.1vw);
   font-weight: 300;
   text-align: right;
   color: var(--text-color-1);
+}
+
+#main-content h1 {
+  letter-spacing: 5px;
+}
+
+#main-content h2 {
+  text-transform: capitalize;
+}
+
+#main-content h3 {
+  padding-bottom: 5px;
+}
+
+#main-content ul:not(#skills ul) {
+  padding-left: 1rem
+}
+
+#projects p {
+  font-weight: 100;
+}
+
+.project-description span {
+  font-style: italic;
+}
+
+#experience h5 {
+  text-align: right;
 }
 
 .link-p {
@@ -294,6 +338,12 @@ section h6 {
 
 #mgraphics {
   text-align: center;
+}
+
+#credentials h6 {
+  --font-size: 16px;
+  font-size: calc(var(--font-size) + 0.25vw);
+  font-style: italic;
 }
 
 footer {
@@ -403,6 +453,7 @@ section {
 main section:nth-child(1n) {
   background-color: var(--bg-color-2);
 }
+
 main section:nth-child(2n) {
   background-color: var(--bg-color-1);
 }
@@ -443,8 +494,8 @@ main section:nth-child(2n) {
 /* -------------------------------------------------- Highlights Section */
 
 #highlights .flex-container {
-  text-align: center;
   row-gap: 1rem;
+  align-items: flex-start;
 }
 
 #highlights ul li {
@@ -458,6 +509,52 @@ main section:nth-child(2n) {
   height: calc((9px * 18) + 10vw);
   object-fit: contain;
 }
+
+.projects-content h4, .projects-content p, .projects-content h5 {
+  padding-bottom: 1rem;
+}
+
+.projects-content ul {
+  list-style-type: square;
+}
+
+.article-link {
+  font-weight: 500;
+}
+
+.article-link:link, .article-link:visited, .article-link:focus, .article-link:hover, .article-link:active {
+  color: var(--color-3);
+  text-decoration: none;
+} 
+
+.button-container {
+  background-color: var(--color-3);
+  width: 200px;
+  margin: auto;
+  border-radius: 0.25rem;
+}
+
+.button-container a {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc(var(--font-size-01) - 2px);
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.button-container a:link,
+.button-container a:visited,
+.button-container a:active {
+  color: white;
+}
+
+.button-container a:hover {
+  background-color: var(--bg-color-1);
+}
+
 
 /* -------------------------------------------------- Projects / Basic Section */
 #projects-basic .grid-container .img-container img {
@@ -509,9 +606,18 @@ main section:nth-child(2n) {
   column-gap: 5rem;
 }
 
-#experience .grid-item, #credentials .grid-item {
-  border-bottom: #D6D6D6 1px solid;
+#experience .grid-item {
   padding-bottom: 0.5rem;
+}
+
+#experience h5 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.border {
+  padding-top: 2rem;
+  border-top: #D6D6D6 1px solid;
 }
 
 /* -------------------------------------------------- Credentials Section */
@@ -520,11 +626,26 @@ main section:nth-child(2n) {
   column-gap: 5rem;
 }
 
+#credentials h1,
+#credentials h2 {
+  padding-bottom: 2rem;
+}
+
 .learning {
   padding-bottom: 1rem;
 }
 
-/* -------------------------------------------------- Courses Section */
+.fit {
+  width: fit-content;
+  margin: auto;
+}
+
+.edu-item,
+.exp-item {
+  padding-bottom: 2rem;
+}
+
+/* --------- Courses Section */
 #courses .courses-list {
   list-style-type: square;
   width: 80vw;
@@ -578,8 +699,8 @@ footer * {
     padding: 1rem;
   }
   #projects .grid-container .img-container img {
-    width: calc((16px * 18) + 15vw);
-    height: calc((9px * 18) + 15vw);
+    width: calc((16px * 18) + 24vw);
+    height: calc((9px * 18) + 24vw);
   }
   #projects-UI-UX .flex-container, #projects-UI-UX .flex {
     flex-direction: row;
@@ -611,7 +732,6 @@ footer * {
     align-items: center;
   }
   #highlights .flex-container {
-    text-align: left;
     gap: 5rem;
   }
   #projects-UI-UX .img-container img {
@@ -636,7 +756,10 @@ footer * {
   .grid-container, .flex-container {
     padding: 2rem;
   }
-  #projects .grid-container {
+  #projects .projects-flexbox {
+    flex-direction: row;
+  }
+  #projects .grid-container:not(#projects .grid-container) {
     grid-template-columns: 1fr 1fr;
   }
   .fr-fr-fr {

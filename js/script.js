@@ -1,4 +1,4 @@
-let speed = 1200;
+let speed = 1500;
 
 gsap.set("#hero path", {visibility: "hidden"})
 gsap.set("#hero h2, #hero h3", {visibility: "hidden"})

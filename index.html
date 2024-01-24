@@ -27,6 +27,15 @@
           </svg>
         </a>
       </div>
+      <nav>
+         <ul class="flex">
+           <li><a href="#main-content">Portfolio</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#credentials">Credentials</a></li>
+           <!-- <li><a href="#skills">Skills</a></li> -->
+         </ul>
+      </nav>
     </header>
 
   <!-- ******************************* HERO (Animation) ******************************* -->
@@ -108,33 +117,57 @@
           <div class="highlights-content">
             
             <h1>Highlights</h1>
-            <h2>Web Design & Development</h2>
 
             <div class="flex-container column left-center">
               <div class="flex-item">
                 <h3>Approach</h3>
                   <ul>
+                    <li>Design Thinking</li>
+                    <li>User Research</li>
+                    <li>User Centered Approach</li>
                     <li>Responsive Web Design</li>
-                    <li>Semantic HTML</li>
-                    <li>Care for Accessibility</li>
                     <li>Flex & Grid Layouts</li>
-                    <li>Human Centred Design</li>
-                    <li>User Interface</li>
-                    <li>User Experience Design</li>
-                    <li>Usability Testing</li>
+                    <li>Version control using Git and GitHub</li>
+                    <li>Sketching, Wireframing and Prototyping</li>
+                    <li>Usability Testing and Design Critique</li>
+                    <li>Visual Storytelling</li>
+                    <li>Agile Workflow</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Animation and Motion Graphics</li>
+                    <li>Care for Accessibility</li>
                   </ul>
               </div>
               <div class="flex-item">
                 <h3>Skillset</h3>
                   <ul>
                     <li>JavaScript ES6</li>
-                    <li>React JS</li>
+                    <li>CSS & SCSS</li>
+                    <li>HTML & XML</li>
                     <li>PHP</li>
                     <li>SQL and NoSQL</li>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>C++</li>
+                    <li>Microsoft Office</li>
+                    <li>SAP</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Figma</li>
+                  </ul>
+              </div>
+              <div class="flex-item">
+                <h3>Libraries+</h3>
+                  <ul>
+                    <li>React JS</li>
+                    <li>jQuery, Bootstrap, Tailwind</li>
                     <li>CSS Animations</li>
                     <li>HTML Canvas</li>
                     <li>GreenSock JS</li>
-                    <li>Node JS</li>
+                    <li>Tidyverse</li>
+                    <li>Node JS (novice)</li>
+                    <li>Express JS (novice)</li>
+                    <li>MongoDB (novice)</li>
+                    <li>AWS EC2 (novice)</li>
                   </ul>
               </div>
             </div>
@@ -157,41 +190,91 @@
 
             <div class="grid-container">
 
-              <div class="grid-item flex left-center column">
-                <a class="img-link" href="sai-yed.com/cms">
-                  <div class="img-container">
-                    <img src="assets/advanced/cms.png" alt="Content Management System page">
+              <div class="grid-item projects-flexbox flex left-center column">
+                <div class="projects-box">
+                  <a class="img-link" href="/cms">
+                    <div class="img-container">
+                      <img src="assets/advanced/cms.png" alt="Content Management System page">
+                    </div>
+                  </a>
+                </div>
+                <div class="project-description">
+                  <h4> Full-Stack CMS with Spotify's API</h4>
+                  <p>EventsGo is a Content Management System that enables you to create event posts using images and YouTube videos. You can also create user accounts for the in-house CMS. Users can also search for artists on our page and add them to the website. The rationale was to test my full-stack skills, integrate the frontend with the database, and enhance its capacity to import and export data through APIs. The software is also customizable and can be used as a content managing tool using the web browser. </p>
+                  <p>Please use the email <span>"testuser@email.com"</span> and password <span>"portfolio2023"</span>. </p>
+                  <h5>Tech Stack</h5>
+                  <ul>
+                    <li>HTML, CSS & JS</li>
+                    <li>PHP with REST API</li>
+                    <li>Spotify's API with OAuth</li>
+                  </ul>
+                  <div class="button-container">
+                    <a class="button-container" href="/cms">Project Link</a> 
                   </div>
-                </a>
-                <h4>CMS with Spotify's API</h4>
+                </div>
               </div>
 
-              <div class="grid-item flex left-center column">
-                <a class="img-link" href="sai-yed.com/mcdonalds">
-                  <div class="img-container">
-                    <img src="assets/advanced/mcdonalds.png" alt="Price calculator game McDonalds">
+              <div class="grid-item projects-flexbox flex left-center column">
+                <div class="projects-box">
+                  <a class="img-link" href="https://clubcricketofchicago.com">
+                    <div class="img-container">
+                      <img src="assets/advanced/cricket.png" alt="Club cricket of Chicago website">
+                    </div>
+                  </a>
+                </div>
+                <div class="project-description">
+                  <h4>Club Cricket Website</h4>
+                  <p>Club Cricket of Chicago hired me to create their website. The website mimics sports teams' websites by incorporating animations and interactions. The project is a work in progress but the layout is well in place. The site is created using React JS with code that is scaleable, and can easily accept more content.</p>
+                  <h5>Tech Stack</h5>
+                  <ul>
+                    <li>HTML, CSS</li>
+                    <li>React JS</li>
+                  </ul>
+                  <div class="button-container">
+                    <a class="button-container" href="https://clubcricketofchicago.com">Project Link</a> 
                   </div>
-                </a>
-                <h4>Mcdonald's Game - Canvas</h4>
+                </div>
               </div>
 
-              <div class="grid-item flex left-center column">
-                <a class="img-link" href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70">
-                  <div class="img-container">
-                    <img src="assets/advanced/animation.png" alt="GreenSock Animation made for Syed's Portfolio">
+              <!-- <div class="grid-item projects-flexbox flex left-center column">
+                <div class="projects-box">
+                  <a class="img-link" href="/mcdonalds">
+                    <div class="img-container">
+                      <img src="assets/advanced/mcdonalds.png" alt="Price calculator game McDonalds">
+                    </div>
+                  </a>
+                  <h4>Mcdonald's Game - Canvas</h4>
+                </div>
+                <div class="project-description">
+                  
+                </div>
+              </div> -->
+
+              <div class="grid-item projects-flexbox flex left-center column">
+                <div class="projects-box">
+                  <a class="img-link" href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70">
+                    <div class="img-container">
+                      <img src="assets/advanced/animation.png" alt="GreenSock Animation made for Syed's Portfolio">
+                    </div>
+                  </a>
+                </div>
+                <div class="project-description">
+                  <h4>GSAP Portfolio Animation</h4>
+                  <p>The portfolio animation was a personal project. Used GreenSock JS, an animation library that uses JavaScript and Event Listeners to create pixel-perfect animations. The motive was to create attractive energy for the website users. I have written about the process in detail on Medium. </p>
+                  <div class="button-container">
+                    <a class="button-container" href="https://sai-yed.medium.com/exploring-animations-for-websites-cda42909bd70">Article Link</a> 
                   </div>
-                </a>
-                <h4>GSAP Portfolio Animation</h4>
+                </div>
               </div>
 
-              <div class="grid-item flex left-center column">
+              <!-- <div class="grid-item flex left-center column">
                 <a class="img-link">
                   <div class="img-container">
                     <img src="assets/advanced/blog.png" alt="Blog page made by Syed">
                   </div>
                 </a>
                 <h4>Blog Site</h4>
-              </div>
+              </div> -->
             </div>
             
 
@@ -202,7 +285,7 @@
       </section>
 
       <!-- ******************************* Projects / Basic ******************************* -->
-      <section id="projects-basic">
+      <!-- <section id="projects-basic">
 
         <div class="section-container">
 
@@ -214,7 +297,7 @@
             <div class="grid-container fr-fr-fr">
 
               <div class="grid-item flex column">
-                <a class="img-link" href="assets/basic/intro.jpg">
+                <a class="img-link" href="/intro">
                   <div class="img-container">
                     <img src="assets/basic/intro.jpg" alt="Syed's intro page">
                   </div>
@@ -223,7 +306,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/rwc">
+                <a class="img-link" href="/rwc">
                   <div class="img-container">
                     <img src="assets/basic/rwc.jpg" alt="Random World Clock project">
                   </div>
@@ -232,7 +315,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/weather">
+                <a class="img-link" href="/weather">
                   <div class="img-container">
                     <img src="assets/basic/weather.jpg" alt="Weather API webpage">
                   </div>
@@ -241,7 +324,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/pacman">
+                <a class="img-link" href="/pacman">
                   <div class="img-container">
                     <img src="assets/basic/pacman.jpg" alt="Pacman animation page">
                   </div>
@@ -250,7 +333,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/muallemi">
+                <a class="img-link" href="/muallemi">
                   <div class="img-container">
                     <img src="assets/basic/muallemi.jpg" alt="multi-page website 01">
                   </div>
@@ -259,7 +342,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/mashawi">
+                <a class="img-link" href="/mashawi">
                   <div class="img-container">
                     <img src="assets/basic/mashawi.jpg" alt="multi-page website 02">
 
@@ -269,7 +352,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/lists">
+                <a class="img-link" href="/lists">
                   <div class="img-container">
                     <img src="assets/basic/lists.jpg" alt="Lists loaded with PHP">
                   </div>
@@ -278,7 +361,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/imagely">
+                <a class="img-link" href="/imagely">
                   <div class="img-container">
                     <img src="assets/basic/imagely.jpg" alt="Webpage made using PHP and SQL">
                   </div>
@@ -287,7 +370,7 @@
               </div>
 
               <div class="grid-item flex column">
-                <a class="img-link" href="sai-yed.com/form">
+                <a class="img-link" href="/form">
                   <div class="img-container">
                     <img src="assets/basic/form.jpg" alt="Form page made with PHP and SQL">
 
@@ -302,7 +385,7 @@
 
         </div>
 
-      </section>
+      </section> -->
 
       <!-- ******************************* Projects / UID & UXD ******************************* -->
       <section id="projects-UI-UX">
@@ -312,7 +395,7 @@
           <div class="projects-UI-UX-content">
 
             <h1>Projects</h1>
-            <h2>User Interfact &</h2>
+            <h2>User Interface &</h2>
             <h2>User Experience Design</h2>
 
             <div class="flex-container column center">
@@ -351,7 +434,7 @@
       </section>
 
       <!-- ******************************* Projects / Motion Graphics ******************************* -->
-      <section id="mgraphics">
+      <!-- <section id="mgraphics">
 
         <div class="section-container">
 
@@ -409,7 +492,7 @@
 
         </div>
 
-      </section>
+      </section> -->
 
       <!-- ******************************* Experience ******************************* -->
       <section id="experience">
@@ -421,22 +504,11 @@
             <h1>Experience</h1>
             <h2>Current Experience</h2>
 
-            <div class="grid-container column fr-fr current">
+            <div class="fit flex column">
 
-              <div class="grid-item">
-                <h3>Data Supervisor - Metro Inc.</h3>
-                <h6>since Oct 21'</h6>
-                <ul>
-                  <li>Data extraction</li>
-                  <li>Data optimization</li>
-                  <li>Problem Solving</li>
-                  <li>Managing Warehouse CMS</li>
-                </ul>
-              </div>
-
-              <div class="grid-item">
+              <div class="exp-item">
                 <h3>Freelance Designer & Developer</h3>
-                <h6>since Sep 20'</h6>
+                <h5>since Sep 20'</h5>
                 <ul>
                   <li>Branding and Ideation</li>
                   <li>Prototyping</li>
@@ -444,12 +516,20 @@
                 </ul>
               </div>
 
-              <div class="grid-item flex column other">
+              <div class="exp-item border">
+                <h3>Data Supervisor - Metro Inc.</h3>
+                <h5>since Oct 21'</h5>
+                <ul>
+                  <li>Managing the Content Management System</li>
+                  <li>Inventory Control</li>
+                  <li>Macros and VBA Scripts</li>
+                </ul>
+              </div>
+
+              <div class="flex column other border">
                 <h2>Other Experience</h2>
                 <ul>
-                  <li>Data & Administration</li>
-                  <li>Accounting & Finance</li>
-                  <li>Teaching</li>
+                  <li>Accounting, Finance, & Administration</li>
                 </ul>
               </div>
 
@@ -470,89 +550,96 @@
 
             <h1>Credentials</h1>
             
-            <div class="grid-container fr-fr current">
+            <div class="fit flex column">
 
-                <div class="grid-item">
-                  <h3>Mutimedia Design & Development</h3>
-                  <h6>Humber College - 22'</h6>
-                  <ul>
-                    <li>Web Design & Development</li>
-                    <li>Front and Back-End Development</li>
-                    <li>User Interface and User Experience Design</li>
-                    <li>Problem Solving and Critical Thinking</li>
-                    <li>Motion Graphics and AR</li>
-                  </ul>
-                </div>
+              <div class="flex column other edu-item">
+                <h3>Bachelor of Information</h3>
+                <h6>University of Toronto - 2024</h6>
+                <ul>
+                  <li>Computer Science</li>
+                  <li>UI and UX Design</li>
+                  <li>Design Research</li>
+                  <li>Data Science</li>
+                  <li>Computational Reasoning</li>
+                  <li>Programming</li>
+                </ul>
+              </div>
 
-                <div class="grid-item fr-fr">
-                  <h3 class="learning">Linkedin Learning</h3>
-                  <div class="flex column">
-                    <div class="flex between">
-                      <p>Become a Front-End Developer</p>
-                      <p>24 hrs</p>
-                    </div>
-                    <div class="flex between">
-                      <p>Learn CSS</p>
-                      <p>27 hrs</p>
-                    </div>
-                    <div class="flex between">
-                      <p>Become a Web Developer</p>
-                      <p>22 hrs</p>
-                    </div>
+              <div class="flex column other edu-item border">
+                <h3>Diploma of Design & Development</h3>
+                <h6>Humber College - 2022</h6>
+                <ul>
+                  <li>Web Design & Development</li>
+                  <li>Front and Back-End Development</li>
+                  <li>User Interface and User Experience Design</li>
+                  <li>Problem Solving and Critical Thinking</li>
+                  <li>Motion Graphics and AR</li>
+                </ul>
+              </div>
+
+              <h2>Certifications</h2>
+
+              <div class="flex column other edu-item">
+                <h4 class="learning">Linkedin Learning</h4>
+                <div class="flex column">
+                  <div class="flex between">
+                    <p>Become a Front-End Developer</p>
+                    <p>24 hrs</p>
+                  </div>
+                  <div class="flex between">
+                    <p>Learn CSS</p>
+                    <p>27 hrs</p>
+                  </div>
+                  <div class="flex between">
+                    <p>Become a Web Developer</p>
+                    <p>22 hrs</p>
                   </div>
                 </div>
+              </div>
 
-                <div class="grid-item flex column other">
-                  <h3>In-Progress</h3>
-                  <div class="flex column">
-                    <div class="flex between">
-                      <p>Become a React Developer</p>
-                      <p>22 hrs</p>
-                    </div>
-                    <div class="flex between">
-                      <p>Become a Full-Stack Developer</p>
-                      <p>29 hrs</p>
-                    </div>
+              <div class="flex column other edu-item border">
+                <h5>In-Progress</h5>
+                <div class="flex column">
+                  <div class="flex between">
+                    <p>Become a React Developer</p>
+                    <p>22 hrs</p>
+                  </div>
+                  <div class="flex between">
+                    <p>Become a Full-Stack Developer</p>
+                    <p>29 hrs</p>
                   </div>
                 </div>
+              </div>
 
             </div>
 
-          </div>
+                      <!-- ******************************* Certification Courses ******************************* -->
+            <div id="courses">
 
-        </div>
+              <h2>Courses</h2>
 
-      </section>
+              <ul class="courses-list"> 
+                <li>Learn React</li>
+                <li>React.js Essential Training</li>
+                <li>React.js Building an Interface</li>
+                <li>React: Creating and Hosting a Full-Stack Site</li>
+                <li>SQL Essential Training</li>
+                <li>Learning PHP</li>
+                <li>Learning GitHub</li>
+                <li>JavaScript Essential Training</li>
+                <li>JavaScript and JSON: Integration Techniques</li>
+                <li>JavaScript and AJAX: Integration Techniques</li>
+                <li>Sass Essential Training</li>
+                <li>Learning ECMAScript 6+ (ES6+)</li>
+                <li>UX Foundations: Accessibility</li>
+                <li>Advanced Responsive Layouts with CSS Flexbox</li>
+                <li>CSS: Advanced Layouts with Grid</li>
+                <li>CSS: Enhancing Interfaces with Animation</li>
+                <li>Adobe Creative Suite</li>
+                <li>and many others….</li>
+              </ul>
 
-      <!-- ******************************* Certification Courses ******************************* -->
-      <section id="courses">
-
-        <div class="section-container">
-
-          <div class="courses-content">
-
-            <h2>Courses</h2>
-            
-            <ul class="courses-list">
-              <li>Learn React</li>
-              <li>React.js Essential Training</li>
-              <li>React.js Building an Interface</li>
-              <li>React: Creating and Hosting a Full-Stack Site</li>
-              <li>SQL Essential Training</li>
-              <li>Learning PHP</li>
-              <li>Learning GitHub</li>
-              <li>JavaScript Essential Training</li>
-              <li>JavaScript and JSON: Integration Techniques</li>
-              <li>JavaScript and AJAX: Integration Techniques</li>
-              <li>Sass Essential Training</li>
-              <li>Learning ECMAScript 6+ (ES6+)</li>
-              <li>UX Foundations: Accessibility</li>
-              <li>Advanced Responsive Layouts with CSS Flexbox</li>
-              <li>CSS: Advanced Layouts with Grid</li>
-              <li>CSS: Enhancing Interfaces with Animation</li>
-              <li>Adobe Creative Suite</li>
-              <li>and many others….</li>
-            </ul>
+            </div>
 
           </div>
 
@@ -586,6 +673,9 @@
                 <li>CSS & SASS</li>
                 <li>PHP</li>
                 <li>SQL</li>
+                <li>Python</li>
+                <li>R</li>
+                <li>C++</li>
               </ul>
             </div>
 
@@ -606,8 +696,9 @@
                 <li>jQuery</li>
                 <li>Bootstrap</li>
                 <li>Tailwind CSS</li>
-                <li>GSAP</li>
+                <li>GreenSock JS, GSAP</li>
                 <li>Node and Express JS</li>
+                <li>Tidyverse</li>
               </ul>
             </div>
 
@@ -622,7 +713,7 @@
                   Photo by <a href="https://unsplash.com/@emilybernal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emily Bernal</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </p>
               </div>
-              <h3>Adobe Creative Suit</h3>
+              <h3>Adobe Creative Suite</h3>
               <ul>
                 <li>Adobe XD</li>
                 <li>Illustrator and Photoshop</li>
@@ -692,7 +783,7 @@
           </a>
         </div>
         <h1>SAI-YED</h1>
-        <p>sai-yed.com</p>
+        <p></p>
         <p>sai-yed@outlook.com</p>
       </footer>
 
