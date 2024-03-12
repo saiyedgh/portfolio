@@ -315,7 +315,7 @@ section h6 {
   padding-bottom: 5px;
 }
 
-#main-content ul:not(#skills ul) {
+#main-content ul {
   padding-left: 1rem
 }
 
@@ -348,11 +348,6 @@ section h6 {
 
 footer {
   font-size: calc(8px + 0.5vw);
-}
-
-#skills h3 {
-  --font-size: 14px;
-  font-size: calc((var(--font-size)) + 0.8vw);
 }
 
 footer h1 {
@@ -653,28 +648,6 @@ main section:nth-child(2n) {
   padding-left: calc(1rem + 1vw);
 }
 
-/* -------------------------------------------------- Skills Section */
-
-#skills {
-  text-align: center;
-}
-
-#skills h3{
-  padding: 1rem 0;
-}
-
-#skills ul {
-  width: fit-content;
-  margin: auto;
-  text-align: left;
-
-}
-
-#skills .img-container img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* -------------------------------------------------- Footer */
 footer{
   border-top: var(--bg-color-2) solid 2px;
@@ -764,5 +737,9 @@ footer * {
   }
   .fr-fr-fr {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .edu-item,
+  .exp-item {
+    width: 60vw;
   }
 }
