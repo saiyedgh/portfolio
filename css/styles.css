@@ -232,6 +232,7 @@ nav {
   --font-size: 14px;
   font-family: var(--font-f-02);
   font-size: calc(var(--font-size) + 0.5vw);
+  line-height: 1.25;
 }
 
 section {
