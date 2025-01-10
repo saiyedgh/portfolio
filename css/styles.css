@@ -492,11 +492,12 @@ main section:nth-child(2n) {
 #highlights .flex-container {
   column-gap: 1rem;
   row-gap: 1rem;
+  justify-content: center;
   align-items: flex-start;
 }
 
 #highlights .flex-container .flex-item {
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 #highlights ul li {
@@ -711,7 +712,7 @@ footer * {
     align-items: center;
   }
   #highlights .flex-container {
-    gap: 5rem;
+    gap: 2rem;
   }
   #projects-UI-UX .img-container img {
     width: calc(130px + 10vw);
