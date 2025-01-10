@@ -490,8 +490,13 @@ main section:nth-child(2n) {
 /* -------------------------------------------------- Highlights Section */
 
 #highlights .flex-container {
+  column-gap: 1rem;
   row-gap: 1rem;
   align-items: flex-start;
+}
+
+#highlights .flex-container .flex-item {
+  flex-basis: 50%;
 }
 
 #highlights ul li {
