@@ -168,15 +168,17 @@ svg path {
   z-index: 5;
 }
 #hero #UID {
-  left: 0%;
+  left: 20%;
   padding: 2vw;
   z-index: 6;
+  font-size: 2rem;
 }
 
 #hero #UXD {
-  right: 0%;
+  right: 20%;
   padding: 2vw;
   z-index: 7;
+  font-size: 2rem;
 }
 
 #hero #FED {

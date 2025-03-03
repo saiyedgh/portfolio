@@ -1,4 +1,4 @@
-let speed = 1500;
+let speed = 3000;
 
 gsap.set("#hero path", {visibility: "hidden"})
 gsap.set("#hero h2, #hero h3", {visibility: "hidden"})
@@ -39,7 +39,7 @@ let WDDandHCD = gsap.timeline({
             //     startColor: "yellow",
             //     endColor: "yellow"
             // },
-            scrub: 1
+            scrub: 0.5
         },
     }
 })
@@ -72,13 +72,13 @@ let UIDandUXD = gsap.timeline({
     defaults: { 
         scrollTrigger: {
             trigger: ".scrollElement",
-            start: "10% top",
-            end: "40% 100%",
+            start: "5% top",
+            end: "20% 100%",
             // markers: {
             //     startColor: "orange",
             //     endColor: "orange"
             // },
-            scrub: 1
+            scrub: 0.5
         },
     }
 })
@@ -100,7 +100,7 @@ let mountainsF = gsap.timeline({
             //     startColor: "#5C5C5C",
             //     endColor: "#5C5C5C"
             // },
-            scrub: 1
+            scrub: 0.5
         },
     }
 })
@@ -126,7 +126,7 @@ let FED = gsap.timeline({
             //     startColor: "red",
             //     endColor: "red"
             // },
-            scrub: 1
+            scrub: 0.5
         },
     }
 })
