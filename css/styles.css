@@ -42,9 +42,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, div {
   margin: 0;
 }
 
-ul {
+ul:not(#experience ul) {
   list-style: none;
   padding-inline-start: 0;
+}
+
+#experience ul {
+  list-style: square;
 }
 
 a:link, a:visited, a:focus, a:hover, a:active {
